@@ -1,0 +1,9 @@
+faiss-cpu
+sentence-transformers
+langchain
+pypdf
+python-dotenv
+fastapi
+uvicorn
+pdfplumber
+numpy
