@@ -1,0 +1,18 @@
+{
+  "id": "elena-verna-plg-growth",
+  "episode_number": 88,
+  "title": "Elena Verna on B2B Product-Led Growth, freemium vs. trial, and retention engines",
+  "guest": "Elena Verna",
+  "guest_role": "Head of Growth at Dropbox, SurveyMonkey, Miro, Amplitude",
+  "date": "2023-11-20",
+  "url": "https://www.lennyspodcast.com/elena-verna-b2b-growth/",
+  "topics": [
+    "Product-Led Growth",
+    "Freemium",
+    "B2B Monetization",
+    "Retention",
+    "Activation"
+  ],
+  "summary": "Elena Verna provides a masterclass on B2B Product-Led Growth (PLG), explaining how to design effective freemium tiers, why retention precedes acquisition, and how to create viral expansion loops within enterprise teams.",
+  "content": "\n[00:00:30] Lenny Rachitsky: Welcome back to Lenny's Podcast. Today we have Elena Verna, widely regarded as the queen of B2B Product-Led Growth. Elena, thank you for joining.\n\n[00:01:10] Elena Verna: Hi Lenny, so excited to be here!\n\n[00:01:50] Lenny Rachitsky: Many B2B companies want to transition from sales-led to product-led. What is the biggest trap they fall into?\n\n[00:02:25] Elena Verna: The number one trap is thinking PLG is just a pricing model or putting a 'Sign Up Free' button on your homepage. \nPLG is an end-to-end company operating model where the product itself drives acquisition, retention, and monetization. \nIf your product has a steep learning curve that requires a human salesperson to set up, putting a freemium tier on it is like pouring water into a bucket without a bottom. You will get signups, but zero activation, zero retention, and huge churn.\nFirst rule: Retention always precedes growth. You must prove that unassisted users can reach the 'Aha moment' in minutes, not days.\n\n[00:07:45] Lenny Rachitsky: How should founders decide between Freemium versus Reverse Trial?\n\n[00:08:20] Elena Verna: A pure Free Trial forces a buying decision in 14 or 30 days. That works well when your value is immediately obvious and urgency is high.\nFreemium is an acquisition engine. It gives users continuous utility forever, which allows you to build habit and land inside an organization. But freemium requires a smart monetization trigger: either usage limits (e.g. number of boards in Miro, storage in Dropbox), feature gating (e.g. SSO, audit logs for enterprise), or collaboration gating (e.g. invite 3 or more teammates).\nMy favorite modern model is the 'Reverse Trial': you give the user full access to all Pro features for 14 days without requiring a credit card. When the trial expires, they don't get locked out; they downgrade gracefully to the free tier. This builds maximum exposure to premium value without creating customer resentment.\n"
+}

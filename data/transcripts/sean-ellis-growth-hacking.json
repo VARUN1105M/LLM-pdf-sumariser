@@ -1,0 +1,17 @@
+{
+  "id": "sean-ellis-growth-hacking",
+  "episode_number": 64,
+  "title": "Sean Ellis on founding Growth Hacking, the 40% PMF rule, and rapid testing",
+  "guest": "Sean Ellis",
+  "guest_role": "Author of Hacking Growth, Former Growth Leader at Dropbox, Eventbrite",
+  "date": "2023-08-10",
+  "url": "https://www.lennyspodcast.com/sean-ellis-growth-hacking/",
+  "topics": [
+    "Growth Hacking",
+    "Product-Market Fit",
+    "North Star Metric",
+    "High-Tempo Testing"
+  ],
+  "summary": "Sean Ellis, who coined the term 'Growth Hacking', explains the famous 40% 'Very Disappointed' rule for measuring product-market fit, how to establish a North Star Metric, and the mechanics of running high-tempo growth sprints.",
+  "content": "\n[00:00:15] Lenny Rachitsky: Sean Ellis is here today. Sean literally coined the term Growth Hacking and helped Dropbox and Eventbrite reach hypergrowth. Sean, let's talk about the PMF survey.\n\n[00:01:05] Sean Ellis: Thanks Lenny. Product-market fit is the prerequisite for all growth. If you try to scale before product-market fit, you're accelerating failure. \nThe survey question is: 'How would you feel if you could no longer use this product tomorrow? Very disappointed, somewhat disappointed, or not disappointed?'\nAcross hundreds of startups, I found a clear benchmark: if 40% or more of your active users answer 'Very disappointed', you have sufficient product-market fit to begin aggressive growth experiments. If you are below 40%, stop spending money on paid marketing. Focus 100% on understanding what your 'Very disappointed' core users love and double down on that.\n\n[00:06:50] Lenny Rachitsky: How do you structure a high-tempo testing process once you have that 40% benchmark?\n\n[00:07:25] Sean Ellis: Growth is a compounding probability game. A team running 2 experiments a month will always lose to a team running 10 experiments a week. \nWe use the ICE scoring framework:\nI = Impact: If this test wins, how big is the lift?\nC = Confidence: What evidence (data, customer quotes, competitor teardowns) supports this hypothesis?\nE = Ease: How quickly can engineering and design ship this test?\nRank the backlog by ICE, hold a weekly growth sprint meeting on Monday morning to review past results, commit to this week's 5 tests, and execute ruthlessly.\n"
+}

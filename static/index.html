@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lenny Growth Assistant | Forward Deployed Intelligence</title>
+  <meta name="description" content="AI-powered growth and product management assistant grounded in Lenny's Podcast transcripts with native Claude-style Artifacts.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+  <!-- Markdown & Syntax Highlighter Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div class="app-layout">
+    <!-- LEFT SIDEBAR: Sessions & Model Selector -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="brand">
+          <div class="brand-avatar">🎙️</div>
+          <div class="brand-info">
+            <h2>Lenny Growth</h2>
+            <span class="badge">Forward Deployed</span>
+          </div>
+        </div>
+        <button class="btn-new-chat" id="btnNewChat" title="Start a fresh independent chat session">
+          <span>+ New Chat</span>
+        </button>
+      </div>
+
+      <!-- Model Config Selector -->
+      <div class="model-selector-card">
+        <label for="providerSelect" class="section-label">ACTIVE LLM PROVIDER</label>
+        <div class="select-wrapper">
+          <select id="providerSelect">
+            <option value="ollama" selected>🦙 Ollama (Local Demo)</option>
+            <option value="anthropic">⚡ Anthropic Claude</option>
+            <option value="openai">🤖 OpenAI GPT-4o</option>
+          </select>
+        </div>
+        <div class="model-status" id="modelStatusIndicator">
+          <span class="status-dot online"></span>
+          <span id="modelStatusText">Local Ollama (mistral)</span>
+        </div>
+      </div>
+
+      <!-- Quick Knowledge Prompts -->
+      <div class="prompt-suggestions">
+        <span class="section-label">CURATED TOPICS</span>
+        <button class="prompt-chip" data-prompt="What is Shreyas Doshi's L/G/P framework and how does it prevent PM burnout?">
+          💡 Shreyas Doshi on L/G/P
+        </button>
+        <button class="prompt-chip" data-prompt="Explain Brian Chesky's 'Founder Mode' at Airbnb and why conventional delegation failed.">
+          🏡 Brian Chesky Founder Mode
+        </button>
+        <button class="prompt-chip" data-prompt="Write a Ship 30 for 30 style atomic essay on Elena Verna's B2B Product-Led Growth principles.">
+          ✍️ Ship 30 for 30: Elena Verna PLG
+        </button>
+        <button class="prompt-chip" data-prompt="How does Sean Ellis measure product-market fit using the 40% rule and high-tempo testing?">
+          📈 Sean Ellis PMF 40% Rule
+        </button>
+        <button class="prompt-chip" data-prompt="Generate an interactive HTML/CSS checklist artifact for running a Shreyas Doshi pre-mortem before launch.">
+          🛠️ Interactive Pre-Mortem Tool
+        </button>
+      </div>
+
+      <!-- Sessions History List -->
+      <div class="sessions-container">
+        <span class="section-label">RECENT CONVERSATIONS</span>
+        <div class="sessions-list" id="sessionsList">
+          <!-- Session items loaded dynamically -->
+        </div>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="system-meta">
+          <span>Grounded in Lenny's Podcast</span>
+          <span class="dot">•</span>
+          <a href="/api/health" target="_blank">Health: OK</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- CENTER / MAIN: Chat Conversation Feed -->
+    <main class="chat-pane" id="chatPane">
+      <header class="chat-header">
+        <div class="chat-header-title">
+          <h1 id="activeChatTitle">Welcome to The Lenny Growth Assistant</h1>
+          <p id="activeChatSubtitle">Ask complex product management questions or generate artifacts grounded in verified transcripts.</p>
+        </div>
+        <div class="chat-header-actions">
+          <button class="btn-toggle-artifacts" id="btnToggleArtifacts" title="Toggle Artifact Viewer">
+            <span class="artifact-icon">📑</span> Artifact Viewer
+          </button>
+        </div>
+      </header>
+
+      <div class="messages-scroll" id="messagesContainer">
+        <!-- Messages rendered dynamically -->
+        <div class="welcome-card" id="welcomeCard">
+          <div class="welcome-icon">🎙️</div>
+          <h2>Grounded Knowledge for Product Leaders</h2>
+          <p>This assistant draws directly from curated transcripts of Lenny’s Podcast with top guests like Shreyas Doshi, Brian Chesky, Elena Verna, Sean Ellis, and Marty Cagan.</p>
+          <div class="feature-pills">
+            <div class="pill">📌 Verifiable Episode Citations</div>
+            <div class="pill">✍️ Ship 30 for 30 Content Skill</div>
+            <div class="pill">🖥️ Live Sandboxed Artifact Viewer</div>
+            <div class="pill">🔀 Local Ollama & Cloud LLM Switcher</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chat Input Area -->
+      <div class="chat-input-wrapper">
+        <form id="chatForm" class="chat-form">
+          <textarea 
+            id="chatInput" 
+            placeholder="Ask a question or request an artifact (e.g. 'Write a Ship 30 for 30 essay on PLG...')" 
+            rows="1"
+            required
+          ></textarea>
+          <button type="submit" id="btnSend" class="btn-send" title="Send Message">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+            </svg>
+          </button>
+        </form>
+        <div class="input-hint">
+          <span>Press <strong>Enter</strong> to send, <strong>Shift + Enter</strong> for a new line.</span>
+        </div>
+      </div>
+    </main>
+
+    <!-- RIGHT: Claude-Style Split Artifact Viewer -->
+    <aside class="artifact-pane" id="artifactPane">
+      <div class="artifact-header">
+        <div class="artifact-title-group">
+          <span class="artifact-tag" id="artifactTypeBadge">HTML ARTIFACT</span>
+          <h3 id="artifactTitle">Artifact Preview</h3>
+        </div>
+        <div class="artifact-controls">
+          <div class="artifact-tabs">
+            <button class="tab-btn active" id="tabPreview">Preview</button>
+            <button class="tab-btn" id="tabCode">Source</button>
+          </div>
+          <button class="btn-icon" id="btnCopyArtifact" title="Copy Artifact Code">📋</button>
+          <button class="btn-icon" id="btnCloseArtifact" title="Close Viewer">✕</button>
+        </div>
+      </div>
+
+      <div class="artifact-body">
+        <!-- Visual Rendered Preview (Sandboxed iframe for HTML security isolation) -->
+        <div class="artifact-view" id="artifactViewPreview">
+          <iframe 
+            id="artifactIframe" 
+            sandbox="allow-scripts" 
+            title="Isolated Artifact Render"
+          ></iframe>
+          <div id="artifactMarkdownView" class="markdown-preview hidden"></div>
+        </div>
+
+        <!-- Raw Code Tab -->
+        <div class="artifact-view hidden" id="artifactViewCode">
+          <pre><code id="artifactRawCode"></code></pre>
+        </div>
+      </div>
+
+      <div class="artifact-footer">
+        <div class="security-note">
+          <span class="shield-icon">🛡️</span>
+          <span>Sandboxed Execution: HTML is rendered in an isolated frame without parent window, cookie, or storage access.</span>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

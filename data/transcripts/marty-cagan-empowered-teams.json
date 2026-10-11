@@ -1,0 +1,18 @@
+{
+  "id": "marty-cagan-empowered-teams",
+  "episode_number": 51,
+  "title": "Marty Cagan on Empowered Product Teams vs. Feature Factories",
+  "guest": "Marty Cagan",
+  "guest_role": "Partner at Silicon Valley Product Group (SVPG), Author of Inspired and Empowered",
+  "date": "2023-06-05",
+  "url": "https://www.lennyspodcast.com/marty-cagan-empowered-teams/",
+  "topics": [
+    "Product Leadership",
+    "Feature Factory",
+    "Product Discovery",
+    "SVPG",
+    "Autonomous Teams"
+  ],
+  "summary": "Marty Cagan explains why the majority of companies claiming to do Agile are actually running 'feature factories', and how true product teams discover solutions that customers love yet work for the business.",
+  "content": "\n[00:00:20] Lenny Rachitsky: Welcome Marty Cagan. Marty, you wrote 'Inspired' and 'Empowered', which have guided thousands of product organizations. What is the fundamental difference between an empowered team and a feature factory?\n\n[00:01:15] Marty Cagan: In a feature factory, the team is given a roadmap of features and deadlines by leadership. The stakeholders say: 'Build this shopping cart feature by Q3.' The PM acts as an agile project manager, writing user stories and managing the backlog. If the feature ships on time, everyone celebrates—even if nobody uses it and it generates zero business value.\nIn an empowered product team, the team is given a customer problem to solve or an outcome to achieve, such as: 'Reduce checkout abandonment rate by 15% without hurting average order value.' \nThe team—consisting of product manager, product designer, and tech lead—is empowered to discover the solution. They test four core risks continuously: Value risk, Usability risk, Feasibility risk, and Business viability risk.\n\n[00:08:30] Lenny Rachitsky: How does a PM lead effective Product Discovery?\n\n[00:09:05] Marty Cagan: You cannot discover products from inside your office. You must talk to customers every single week. My rule is: every product team must conduct at least three customer discovery interviews or prototype tests every week. \nPrototype rapidly. Don't write production code to test value. Use interactive prototypes, concierge tests, and wizard-of-oz tests. Fast discovery separates the ideas that work from the 80% of ideas that will fail.\n"
+}

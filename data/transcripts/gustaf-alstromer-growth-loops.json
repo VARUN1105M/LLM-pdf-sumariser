@@ -1,0 +1,18 @@
+{
+  "id": "gustaf-alstromer-growth-loops",
+  "episode_number": 75,
+  "title": "Gustaf Alströmer on Growth Loops, YC Startup Growth, and Retention cohorts",
+  "guest": "Gustaf Alströmer",
+  "guest_role": "Group Partner at Y Combinator, Former Head of Growth at Airbnb",
+  "date": "2023-09-14",
+  "url": "https://www.lennyspodcast.com/gustaf-alstromer-growth-loops/",
+  "topics": [
+    "Growth Loops",
+    "Retention Curves",
+    "Y Combinator",
+    "Viral Loops",
+    "Funnel Metrics"
+  ],
+  "summary": "Gustaf Alströmer discusses lessons from evaluating thousands of YC startups, why linear marketing funnels are obsolete compared to compounding growth loops, and how to analyze retention curves.",
+  "content": "\n[00:00:18] Lenny Rachitsky: Today my guest is Gustaf Alströmer, Group Partner at Y Combinator and former Head of Growth at Airbnb. Gustaf, why do you advise startups to focus on Growth Loops rather than traditional marketing funnels?\n\n[00:01:05] Gustaf Alströmer: Linear funnels—awareness, acquisition, activation, retention, referral, revenue (AARRR)—are flawed because they require you to constantly pump money or marketing spend into the top of the funnel. When you stop spending, user acquisition drops to zero.\nGrowth loops, on the other hand, are closed compounding systems. The action of one user directly generates input for the next user.\nFor example, at Airbnb: a host lists an apartment -> guests search and book -> the guest experiences a great stay -> the guest tells their friends or becomes a host themselves in another city.\nAt Pinterest: a user pins content -> the pin gets indexed by Google -> new searchers find the pin -> they sign up and pin more content.\nIf your startup doesn't have a compounding growth loop—whether viral, content-driven, or paid reinvestment—sustainable scale is almost impossible.\n\n[00:07:30] Lenny Rachitsky: What does a healthy retention curve look like for an early-stage company?\n\n[00:08:10] Gustaf Alströmer: Plot your cohort retention over time (Day 1, Day 7, Day 30, Day 90). If the curve asymptotically flattens out into a horizontal line parallel to the x-axis, you have retained a core cohort. That flat line represents your product's baseline value. \nIf the curve trends downward towards zero, you do not have product-market fit. Never attempt to pour growth loop fuel on a product with a retention curve that trends to zero.\n"
+}

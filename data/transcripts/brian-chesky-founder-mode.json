@@ -1,0 +1,18 @@
+{
+  "id": "brian-chesky-founder-mode",
+  "episode_number": 105,
+  "title": "Brian Chesky on 'Founder Mode', redesigning Airbnb, and leading with taste",
+  "guest": "Brian Chesky",
+  "guest_role": "Co-founder & CEO, Airbnb",
+  "date": "2024-09-08",
+  "url": "https://www.lennyspodcast.com/brian-chesky-founder-mode/",
+  "topics": [
+    "Founder Mode",
+    "Product Leadership",
+    "Airbnb",
+    "Design",
+    "Management"
+  ],
+  "summary": "Brian Chesky explains how conventional Silicon Valley management advice—delegating everything to professional managers—almost broke Airbnb, and why founders must remain deep in the details, run a centralized product review cadence, and obsess over design and craft.",
+  "content": "\n[00:00:20] Lenny Rachitsky: Today my guest is Brian Chesky, co-founder and CEO of Airbnb. Brian, your talk about 'Founder Mode' at Y Combinator blew up the tech internet. What does Founder Mode actually mean to you?\n\n[00:01:30] Brian Chesky: Lenny, for years we were told by traditional VCs and executive coaches that as a company scales, the founder's job is to hire 'great executives' and get out of their way. 'Hire them, empower them, delegate to them.'\nWe did that at Airbnb as we approached 2019, and the company became bureaucratic, fragmented, and slow. Every division became a silo with its own OKRs, roadmap, and design language. We were building mediocre software.\nWhen the pandemic hit and our business dropped 80% in eight weeks, I had no choice. I pulled back control. I got rid of conventional divisional product management and centralized the company under a single shared roadmap. \nFounder mode means: you do not abdicate responsibility under the guise of delegation. You are in the details. You review the design, you test the flows, you question assumptions, and you ensure that the entire company operates with a cohesive product taste and unified vision.\n\n[00:08:15] Lenny Rachitsky: How do you balance being in the details with not micromanaging?\n\n[00:08:50] Brian Chesky: People confuse micromanagement with excellence. Micromanagement is telling a talented person what color button to click while having no vision. \nWhat I do is collaborative inquiry: 'Show me the end-to-end user journey. Why does this screen have five steps instead of two? Where is the magic in this experience?' If you set high standards and partner with people in the craft, the best builders love it because they know the CEO genuinely cares about their work. \nAt Airbnb, we hold product reviews every single week. We ship major seasonal releases twice a year—Summer Release and Winter Release—which forces cross-functional synchronization instead of random feature droppings.\n"
+}
